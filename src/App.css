@@ -1,0 +1,394 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.navbar h1 {
+  color: white;
+  font-size: 50px;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 35px;
+  text-transform: capitalize;
+}
+
+.nav-links a:hover {
+  color: #00adb5;
+}
+
+#logo {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Home Section Homeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  gap: 60px;
+  color: white;
+  background-color: #222;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-image img {
+  width: 70%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid white;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.hero-content h4 {
+  color: #e0e2e6;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 {
+  font-size: 45px;
+  margin: 0;
+}
+
+.hero-content h1 span {
+  color: #22a4bb;
+}
+
+.hero-content p {
+  font-size: 25px;
+  line-height: 1.7;
+}
+
+.hero-content button {
+  background: #102b5c;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* about  tttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
+.about {
+  padding: 5px 10%;
+  margin: auto;
+  background-color: #222;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.about-content {
+  margin: auto;
+}
+
+.about-content h3 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #22a4bb;
+}
+
+.about-content p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.about-content strong {
+  color: #d14b8a;
+}
+
+/* projecttttttttttttttttttttttttttt */
+.project {
+  padding: 80px 10%;
+  background-color: #222;
+  text-align: center;
+}
+
+.project h2 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.project-subtitle {
+  max-width: 650px;
+  margin: 0 auto 45px;
+  color: white;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.project-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eef4ff;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.project-card h3 {
+  font-size: 22px;
+  color: #2756a1;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.project-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2756a1;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-card button:hover {
+  background-color: #1d427c;
+  transform: scale(1.05);
+}
+
+/* ================= SKILLS SECTION ================= */
+.skills {
+  min-height: 100vh;
+  padding: 80px 10%;
+  background-color: #222;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+.skills h2 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.skills-subtitle {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 650px;
+  margin: 0 auto 50px;
+  line-height: 1.7;
+}
+
+.skills-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.skill-card {
+  background-color: #2d2d2d;
+  padding: 30px 25px;
+  border-radius: 15px;
+  text-align: left;
+  border: 1px solid #444;
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  border-color: #22a4bb;
+}
+
+.skill-card h3 {
+  font-size: 22px;
+  margin: 0 0 18px;
+  /* color: #22a4bb; */
+}
+
+.skill-card>span {
+  display: block;
+  text-align: right;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #444;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  border-radius: 20px;
+  background-color: #22a4bb;
+}
+
+.html {
+  width: 90%;
+  /* color: #d14b8a; */
+}
+
+.css {
+  width: 85%;
+  /* color:blue ; */
+}
+
+.javascript {
+  width: 75%;
+}
+
+.react {
+  width: 80%;
+}
+
+.uiux {
+  width: 85%;
+}
+
+.graphic {
+  width: 80%;
+}
+
+/* ================= CONTACT SECTION ================= */
+.contact {
+  min-height: 100vh;
+  padding: 80px 10%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.contact h2 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.contact-text {
+  color: #ccc;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #2d2d2d;
+  border: 1px solid #555;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+.contact-form textarea:focus {
+  border-color: #22a4bb;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 14px 25px;
+  background-color: #22a4bb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #16879b;
+  transform: translateY(-2px);
+}
+/* footerttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
+
+.footer {
+  background-color: #2c2727fa;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer p {
+  font-size: 14px;
+}
