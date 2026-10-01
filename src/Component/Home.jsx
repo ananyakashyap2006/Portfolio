@@ -15,7 +15,7 @@ function Home() {
         <span className="hello">Hello ,</span>
 
         <h1>
-         I am <span>Ananya </span><br/>
+         I am <span>Ananya Kashyap</span><br/>
                  <span>Web Designer...... </span>
         </h1>
         <p>
