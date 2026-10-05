@@ -16,12 +16,10 @@ function Home() {
 
         <h1>
          I am <span>Ananya Kashyap</span><br/>
-                 <span>Web Designer...... </span>
+                 <span>Web Developer</span>
         </h1>
         <p>
-          Lorem ipsum is a standard placeholder or dummy 
-          text widely used in graphic design, web development,
-          and publishing to preview layouts. 
+         A passionate web developer who loves creating modern, responsive, and user-friendly websites. I enjoy learning new technologies and turning ideas into creative digital experiences.
         </p>
 
         <button className="talk-btn">Let's Talk</button>
