@@ -15,11 +15,11 @@
           <textarea placeholder="Your Message" rows="5" required ></textarea> 
           <button type="submit"> Send Message </button> </form> 
           <div className="contact-icons">
-          <a href ="https://www.Github.com/" target="_blank">
-             <FontAwesomeIcon icon={faGithub} /></a>
-             <a href ="https://www.Linkedin.com/" target="_blank">
-             <FontAwesomeIcon icon={faLinkedin} /></a>
-             <a href ="https://www.Envelope.com/" target="_blank">
+         <a href ="https://github.com/ananyakashyap2006" target="_blank">
+              <FontAwesomeIcon icon={faGithub} /></a>
+                <a href ="https://www.linkedin.com/in/ananyakashyap2006" target="_blank">
+                 <FontAwesomeIcon icon={faLinkedin} /></a>
+             <a href ="mailto:ananyakashyap344@gmail.com" target="_blank">
              <FontAwesomeIcon icon={faEnvelope} /></a>
             </div>
       </section> 

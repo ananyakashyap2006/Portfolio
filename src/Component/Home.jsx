@@ -25,11 +25,11 @@ function Home() {
         </p>
         <button className="talk-btn">Let's Talk</button> 
         <div className="social-icons">
-        <a href ="https://www.Github.com/" target="_blank">
+        <a href ="https://github.com/ananyakashyap2006" target="_blank">
           <FontAwesomeIcon icon={faGithub} /></a>
-          <a href ="https://www.Linkedin.com/" target="_blank">
+          <a href ="https://www.linkedin.com/in/ananyakashyap2006" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} /></a>
-          <a  href ="https://www.Linkedin.com/" target="_blank">
+          <a  href ="https://www.Twitter.com/" target="_blank">
         <FontAwesomeIcon icon={faTwitter} /></a>
       </div>
       </div>
