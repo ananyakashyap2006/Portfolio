@@ -418,3 +418,609 @@
 .footer p {
   font-size: 14px;
 }
+
+
+/* =====================================================
+   RESPONSIVE CSS
+   Add this code BELOW all your existing CSS
+   ===================================================== */
+
+
+/* ================= LARGE DESKTOP ================= */
+
+@media (min-width: 1200px) {
+
+  .hero {
+    padding: 70px 10%;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+
+  .hero-content h1 {
+    font-size: 50px;
+  }
+
+  .hero-image img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .project-container,
+  .skills-container {
+    max-width: 1200px;
+  }
+}
+
+
+/* ================= LAPTOP ================= */
+
+@media (min-width: 993px) and (max-width: 1199px) {
+
+  .navbar {
+    padding: 0 35px;
+  }
+
+  .navbar h1 {
+    font-size: 42px;
+  }
+
+  .nav-links {
+    gap: 22px;
+  }
+
+  .nav-links a {
+    font-size: 28px;
+  }
+
+  .hero {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-content p {
+    font-size: 21px;
+  }
+
+  .hero-image img {
+    width: 330px;
+    height: 330px;
+  }
+
+  .project-container,
+  .skills-container {
+    gap: 20px;
+  }
+}
+
+
+/* ================= TABLET ================= */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .navbar {
+    padding: 0 25px;
+  }
+
+  .navbar h1 {
+    font-size: 35px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 22px;
+  }
+
+  /* Home */
+
+  .hero {
+    padding: 60px 30px;
+    gap: 30px;
+  }
+
+  .hero-content {
+    max-width: 50%;
+  }
+
+  .hero-content h1 {
+    font-size: 35px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-image {
+    width: 50%;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 280px;
+    height: 280px;
+  }
+
+  /* About */
+
+  .about {
+    padding: 60px 6%;
+  }
+
+  .about h2 {
+    font-size: 42px;
+  }
+
+  .about-content h3 {
+    font-size: 38px;
+  }
+
+  .about-content p {
+    font-size: 18px;
+  }
+
+  /* Project */
+
+  .project {
+    padding: 70px 6%;
+  }
+
+  .project h2 {
+    font-size: 42px;
+  }
+
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Skills */
+
+  .skills {
+    padding: 70px 6%;
+  }
+
+  .skills h2 {
+    font-size: 42px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+
+  .contact {
+    padding: 70px 6%;
+  }
+
+  .contact h2 {
+    font-size: 42px;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+
+  .navbar {
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    padding: 15px 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .navbar h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 20px;
+  }
+
+  #logo {
+    width: 45px;
+    height: 45px;
+  }
+
+
+  /* Home */
+
+  .hero {
+    min-height: auto;
+    padding: 60px 20px;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-content h4 {
+    font-size: 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .hero-content button {
+    padding: 12px 25px;
+  }
+
+  .hero-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 18px;
+  }
+
+
+  /* About */
+
+  .about {
+    padding: 60px 20px;
+  }
+
+  .about h2 {
+    font-size: 35px;
+  }
+
+  .about-content h3 {
+    font-size: 30px;
+  }
+
+  .about-content p {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+
+  /* Project */
+
+  .project {
+    padding: 60px 20px;
+  }
+
+  .project h2 {
+    font-size: 35px;
+  }
+
+  .project-subtitle {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .project-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  /* Skills */
+
+  .skills {
+    min-height: auto;
+    padding: 60px 20px;
+  }
+
+  .skills h2 {
+    font-size: 35px;
+  }
+
+  .skills-subtitle {
+    font-size: 17px;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skill-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  /* Contact */
+
+  .contact {
+    min-height: auto;
+    padding: 60px 20px;
+  }
+
+  .contact h2 {
+    font-size: 35px;
+  }
+
+  .contact-text {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-icons {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .contact-icons svg {
+    font-size: 25px;
+  }
+
+
+  /* Footer */
+
+  .footer {
+    padding: 15px 10px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+  /* Navbar */
+
+  .navbar {
+    padding: 12px 15px;
+  }
+
+  .navbar h1 {
+    font-size: 26px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  #logo {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  /* Home */
+
+  .hero {
+    padding: 45px 15px;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-content h4 {
+    font-size: 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 27px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-content button {
+    font-size: 14px;
+    padding: 11px 22px;
+  }
+
+
+  /* About */
+
+  .about {
+    padding: 50px 15px;
+  }
+
+  .about h2 {
+    font-size: 30px;
+  }
+
+  .about-content h3 {
+    font-size: 25px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+
+  /* Project */
+
+  .project {
+    padding: 50px 15px;
+  }
+
+  .project h2 {
+    font-size: 30px;
+  }
+
+  .project-subtitle {
+    font-size: 15px;
+  }
+
+  .project-card {
+    padding: 25px 18px;
+  }
+
+  .project-card h3 {
+    font-size: 20px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+  }
+
+
+  /* Skills */
+
+  .skills {
+    padding: 50px 15px;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+  }
+
+  .skills-subtitle {
+    font-size: 15px;
+  }
+
+  .skill-card {
+    padding: 25px 18px;
+  }
+
+  .skill-card h3 {
+    font-size: 20px;
+  }
+
+
+  /* Contact */
+
+  .contact {
+    padding: 50px 15px;
+  }
+
+  .contact h2 {
+    font-size: 30px;
+  }
+
+  .contact-text {
+    font-size: 15px;
+  }
+
+  .contact-form {
+    gap: 15px;
+  }
+
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+
+  .contact-icons {
+    gap: 15px;
+  }
+
+  .contact-icons svg {
+    font-size: 22px;
+  }
+
+
+  /* Footer */
+
+  .footer p {
+    font-size: 12px;
+  }
+}
+
+
+/* ================= VERY SMALL MOBILE ================= */
+
+@media (max-width: 360px) {
+
+  .navbar h1 {
+    font-size: 23px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .hero-image img {
+    width: 170px;
+    height: 170px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .about h2,
+  .project h2,
+  .skills h2,
+  .contact h2 {
+    font-size: 27px;
+  }
+
+  .about-content h3 {
+    font-size: 22px;
+  }
+
+  .project-card,
+  .skill-card {
+    padding: 20px 15px;
+  }
+}

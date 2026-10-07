@@ -29,10 +29,11 @@ function Home() {
           <FontAwesomeIcon icon={faGithub} /></a>
           <a href ="https://www.linkedin.com/in/ananyakashyap2006" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} /></a>
-          <a  href ="https://www.Twitter.com/" target="_blank">
+          <a  href ="https://x.com/AnanyaKashpvvs" target="_blank">
         <FontAwesomeIcon icon={faTwitter} /></a>
       </div>
       </div>
+      
     </section>
   );
 }
