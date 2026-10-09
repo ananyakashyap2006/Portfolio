@@ -40,15 +40,15 @@ function Skills() {
           <div className="skill-bar">
             <div className="skill-progress react"></div>
           </div>
-          <span>80%</span>
+          <span>60%</span>
         </div>
 
         <div className="skill-card">
-          <h3>UI/UX Design</h3>
+          <h3>Python</h3>
           <div className="skill-bar">
             <div className="skill-progress uiux"></div>
           </div>
-          <span>85%</span>
+          <span>50%</span>
         </div>
 
         <div className="skill-card">

@@ -302,12 +302,10 @@
 
 .html {
   width: 90%;
-  /* color: #d14b8a; */
 }
 
 .css {
   width: 85%;
-  /* color:blue ; */
 }
 
 .javascript {
@@ -315,11 +313,11 @@
 }
 
 .react {
-  width: 80%;
+  width: 60%;
 }
 
 .uiux {
-  width: 85%;
+  width: 50%;
 }
 
 .graphic {
