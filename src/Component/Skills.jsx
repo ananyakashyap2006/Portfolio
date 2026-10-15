@@ -48,7 +48,7 @@ function Skills() {
           <div className="skill-bar">
             <div className="skill-progress uiux"></div>
           </div>
-          <span>50%</span>
+          <span>70%</span>
         </div>
 
         <div className="skill-card">
@@ -56,7 +56,7 @@ function Skills() {
           <div className="skill-bar">
             <div className="skill-progress graphic"></div>
           </div>
-          <span>80%</span>
+          <span>60%</span>
         </div>
 
       </div>
