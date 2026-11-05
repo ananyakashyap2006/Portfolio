@@ -1,64 +1,125 @@
-import React from 'react';
-import '../App.css';
-function Skills() {
-  return (
-    <section className="skills" id="skills">
-      <h2>My Skills</h2>
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3Alt,
+  faJs,
+  faReact,
+  faPython,
+} from "@fortawesome/free-brands-svg-icons";
+import { faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 
-      <p className="skills-subtitle">
-        Technologies and creative skills I use to build modern digital experiences.
-      </p>
+function Skills() {
+  const skillsList = [
+    {
+      name: "HTML5",
+      percent: 90,
+      icon: faHtml5,
+      color: "#e34f26",
+      desc: "Semantic markup, accessibility, modern standards",
+    },
+    {
+      name: "CSS3",
+      percent: 85,
+      icon: faCss3Alt,
+      color: "#1572b6",
+      desc: "Flexbox, Grid, animations, media queries",
+    },
+    {
+      name: "JavaScript",
+      percent: 75,
+      icon: faJs,
+      color: "#f7df1e",
+      desc: "ES6+, DOM manipulation, async/await, APIs",
+    },
+    {
+      name: "React",
+      percent: 65,
+      icon: faReact,
+      color: "#61dafb",
+      desc: "Components, Hooks, state management, SPA",
+    },
+    {
+      name: "Python",
+      percent: 70,
+      icon: faPython,
+      color: "#38bdf8",
+      desc: "Core programming, logic building, algorithms",
+    },
+    {
+      name: "Graphic Design",
+      percent: 65,
+      icon: faPaintBrush,
+      color: "#f43f5e",
+      desc: "Visual hierarchy, typography, UI wireframing",
+    },
+  ];
+
+  const tools = [
+    "Git & GitHub",
+    "VS Code",
+    "Vercel",
+    "Responsive Design",
+    "REST APIs",
+    "Figma",
+    "Tailwind Concepts",
+  ];
+
+  return (
+    <section className="section skills" id="skills">
+      <div className="section-header">
+        <span className="section-badge">Technical Proficiency</span>
+        <h2 className="section-title">My Skills</h2>
+        <div className="title-underline"></div>
+        <p className="section-subtitle">
+          Technologies, frameworks, and creative disciplines I leverage to craft
+          interactive and dependable digital experiences.
+        </p>
+      </div>
 
       <div className="skills-container">
+        {skillsList.map((skill, index) => (
+          <div className="skill-card" key={index}>
+            <div className="skill-header">
+              <div
+                className="skill-icon-wrap"
+                style={{
+                  color: skill.color,
+                  backgroundColor: `${skill.color}18`,
+                  borderColor: `${skill.color}40`,
+                }}
+              >
+                <FontAwesomeIcon icon={skill.icon} />
+              </div>
+              <div className="skill-title-block">
+                <h3>{skill.name}</h3>
+                <span className="skill-percentage">{skill.percent}%</span>
+              </div>
+            </div>
 
-        <div className="skill-card">
-          <h3>HTML</h3>
-          <div className="skill-bar">
-            <div className="skill-progress html"></div>
+            <p className="skill-desc">{skill.desc}</p>
+
+            <div className="skill-bar">
+              <div
+                className="skill-progress"
+                style={{
+                  width: `${skill.percent}%`,
+                  background: `linear-gradient(90deg, #00adb5, ${skill.color})`,
+                }}
+              ></div>
+            </div>
           </div>
-          <span>90%</span>
-        </div>
+        ))}
+      </div>
 
-        <div className="skill-card">
-          <h3>CSS</h3>
-          <div className="skill-bar">
-            <div className="skill-progress css"></div>
-          </div>
-          <span>85%</span>
+      <div className="tools-card">
+        <h3>Other Tools & Proficiencies</h3>
+        <div className="tools-tags">
+          {tools.map((tool, i) => (
+            <span key={i} className="tool-tag">
+              {tool}
+            </span>
+          ))}
         </div>
-
-        <div className="skill-card">
-          <h3>JavaScript</h3>
-          <div className="skill-bar">
-            <div className="skill-progress javascript"></div>
-          </div>
-          <span>75%</span>
-        </div>
-
-        <div className="skill-card">
-          <h3>React</h3>
-          <div className="skill-bar">
-            <div className="skill-progress react"></div>
-          </div>
-          <span>60%</span>
-        </div>
-
-        <div className="skill-card">
-          <h3>Python</h3>
-          <div className="skill-bar">
-            <div className="skill-progress uiux"></div>
-          </div>
-          <span>70%</span>
-        </div>
-
-        <div className="skill-card">
-          <h3>Graphic Design</h3>
-          <div className="skill-bar">
-            <div className="skill-progress graphic"></div>
-          </div>
-          <span>60%</span>
-        </div>
-
       </div>
     </section>
   );

@@ -1,9 +1,4 @@
-import React from 'react'
-
-// export const Header = (props) => {
-//   return (
-//     <div>{props.heading}</div>
-//   )
-// }
-
-// export default Header
+// Header component (reserved for future header widgets)
+export default function Header() {
+  return null;
+}
